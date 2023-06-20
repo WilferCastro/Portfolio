@@ -23,6 +23,22 @@
 
         <div class="row">
 
+            <button id="toggleButton" class="float-ball"><i class="fa-solid fa-bars"></i></button>
+
+            <div class="container">
+                <div class="sidebar">
+                    <ul>
+                        <li><a class="active" href="#intro"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="#about-me"><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="#education"><i class="fa-solid fa-book"></i></a></li>
+                        <li><a href="#habilities"><i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
+                        <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i></a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
             <div class="col-lg-4" style="margin-top: 10px;">
                 <div class="glass">
                     <div class="px-4 py-4 text-white">
@@ -55,7 +71,8 @@
 
                                 <div class="d-grid gap-2">
                                     <button class="btn1" id="btn_acceptar"><i class="fa-solid fa-envelope"></i>
-                                        Contactar</button>
+                                        Contactar
+                                    </button>
                                 </div>
                     </div>
 
@@ -66,7 +83,7 @@
             <div class="col-lg-8 column2 mt-4 py-5 text-white">
 
                 <!-- Introducción -->
-                <div class="">
+                <div id="intro" class="seccion">
                     <div class="mb-5">
                         <span class="intro"><i class="fa-solid fa-house"></i> Introducción</span>
                     </div>
@@ -87,7 +104,7 @@
                 <!--FIN Introducción -->
 
                 <!-- INICIO SOBRE MI -->
-                <div class="">
+                <div id="about-me" class="seccion">
                     <div style="margin: 270px 0 20px 0;">
                         <span class="intro"><i class="fa-solid fa-user"></i> Sobre mi</span>
                     </div>
@@ -119,7 +136,7 @@
                 <!-- FIN SOBRE MI -->
 
                 <!-- INICIO EDUCACION -->
-                <div class="" style="margin-top: 270px;">
+                <div class="seccion" id="education" style="margin-top: 270px;">
                     <div class="mb-6">
                         <span class="intro"><i class="fa-solid fa-book"></i> Educación</span>
                     </div>
@@ -214,13 +231,13 @@
 
 
                 <!-- INICIO MIS HABILIDADES -->
-                <div>
+                <div id="habilities" class="seccion">
                     <div style="margin: 270px 0 120px 0;">
                         <span class="intro"><i class="fa-solid fa-wand-magic-sparkles"></i> Mis Habilidades</span>
                     </div>
 
                     <div class="mb-5">
-                        <h2 class="subtitle">Habilidades & <span class="color-primary">Herramientas</span></h2>
+                        <h2 class="subtitle">Tecnologías & <span class="color-primary">Herramientas</span></h2>
                     </div>
 
                     <div class="text-center">
@@ -272,7 +289,7 @@
                 <!-- FIN MIS HABILIDADES -->
 
                 <!-- INICIO PROYECTOS -->
-                <div class="" style="margin-top: 250px;">
+                <div class="seccion" id="projects" style="margin-top: 250px;">
                     <div style="margin: 270px 0 100px 0;">
                         <span class="intro"><i class="fa-solid fa-diagram-project"></i> Proyectos</span>
                     </div>
@@ -310,11 +327,11 @@
                         <div class="col-md-6 scroll-animation mb-5" data-animation="fade_from_left">
                             <div class="portfolio-item">
                                 <div class="portfolio-item-inner">
-                                    <a href="/assets/img/portfolio2.jpg" data-lightbox="example-1">
-                                        <img src="/assets/img/portfolio2.jpg" alt="Portfolio">
+                                    <a href="/assets/img/proyecto2.jpg" data-lightbox="example-1">
+                                        <img src="/assets/img/proyecto2.jpg" alt="Portfolio">
                                     </a>
 
-                                    <img src="/assets/img/portfolio2.jpg" alt="Portfolio">
+                                    <img src="/assets/img/proyecto2.jpg" alt="Portfolio">
 
                                     <ul class="portfolio-categories">
                                         <li>
@@ -393,44 +410,46 @@
                 <!-- FIN PROYECTOS -->
 
                 <!-- INICIO CONTACTO -->
-                <div style="margin: 270px 0 120px 0;">
-                    <span class="intro"><i class="fa-solid fa-envelope"></i> Contacto</span>
-                </div>
-
-                <div class="mb-5">
-                    <h2 class="subtitle">Tienes algo <span class="color-primary">en mente?</span></h2>
-                </div>
-
-                <form action="#" method="post">
-                    <div class="row">
-                        <div class="col-md-6 mb-5">
-                            <div class="group-input">
-                                <input type="text" id="id-name" placeholder="." required>
-                                <label for="id-name">Nombre <sup>*</sup></label>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-5">
-                            <div class="group-input">
-                                <input type="email" id="id-phone" placeholder="." required>
-                                <label for="id-email">Email <sup>*</sup></label>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-5">
-                            <div class="group-input">
-                                <input type="number" id="id-email" placeholder=".">
-                                <label for="id-phone">Teléfono</label>
-                            </div>
-                        </div>
-                        <div class="col-md-12 mb-5">
-                            <div class="group-input">
-                                <textarea name="" id="id-message" cols="30" rows="8" placeholder="Mensaje"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12 mb-5">
-                            <button type="submit" class="btn2"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
-                        </div>
+                <div id="contact" class="seccion">
+                    <div style="margin: 270px 0 120px 0;">
+                        <span class="intro"><i class="fa-solid fa-envelope"></i> Contacto</span>
                     </div>
-                </form>
+    
+                    <div class="mb-5">
+                        <h2 class="subtitle">Tienes algo <span class="color-primary">en mente?</span></h2>
+                    </div>
+    
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-6 mb-5">
+                                <div class="group-input">
+                                    <input type="text" id="id-name" placeholder="." required>
+                                    <label for="id-name">Nombre <sup>*</sup></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <div class="group-input">
+                                    <input type="email" id="id-phone" placeholder="." required>
+                                    <label for="id-email">Email <sup>*</sup></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <div class="group-input">
+                                    <input type="number" id="id-email" placeholder=".">
+                                    <label for="id-phone">Teléfono</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-5">
+                                <div class="group-input">
+                                    <textarea name="" id="id-message" cols="30" rows="8" placeholder="Mensaje"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-5">
+                                <button type="submit" class="btn2"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <!-- FIN CONTACTO -->
 
             </div>
@@ -443,6 +462,7 @@
     <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
