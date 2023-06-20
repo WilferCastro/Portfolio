@@ -8,7 +8,7 @@ body {
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.27);
   position: sticky;
   top: 15px;
   margin: auto;
@@ -133,6 +133,10 @@ body {
   left: -46px;
   top: 5px;
 }
+.line h2{
+  cursor: pointer;
+  text-transform: capitalize;
+}
 
 .div-skill {
   height: 300px;
@@ -150,6 +154,10 @@ body {
 }
 
 .badge {
+  border: none;
+  padding: 6px !important;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
   padding: 0px 10px 0px 10px;
   text-align: center;
   color: #fff;
@@ -207,29 +215,20 @@ body {
 .study {
   display: inline;
   text-align: center;
-  padding: 8px 1px 8px 6px;
+  padding: 8px;
   border: 1px solid dimgray;
+  color: dimgray;
   border-radius: 50px;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.study:hover {
-  border-color: #0ea5e9;
 }
 
 .work {
   display: inline;
   text-align: center;
-  padding: 8px 0px 8px 5px;
+  padding: 8px 10px;
   border: 1px solid dimgray;
+  color: dimgray;
   border-radius: 50px;
   margin-right: 20px;
-  cursor: pointer;
-}
-
-.work:hover {
-  border-color: #0ea5e9;
 }
 
 .portfolio-item-inner {
@@ -394,6 +393,19 @@ textarea {
 .sidebar.hidden {
   transform: translateX(200px); /* Oculta el menú lateral hacia la izquierda */
 }
+
+.popover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.popover-header,
+.popover-body {
+  color: #fff;
+  background-color: transparent;
+}
+
 
 
 @media (max-width: 787px) {
