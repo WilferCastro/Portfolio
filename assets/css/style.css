@@ -404,7 +404,7 @@ textarea {
 }
 
 .sidebar.hidden {
-  transform: translateX(200px); /* Oculta el menú lateral hacia la izquierda */
+  transform: translateX(0); /* Oculta el menú lateral hacia la izquierda */
 }
 
 .popover {
@@ -426,7 +426,6 @@ textarea {
     font-size: 58px;
     line-height: 1.3;
   }
-
   .btn2 {
     width: 100%;
   }
@@ -440,11 +439,9 @@ textarea {
   .float-ball{
     display: block;
   }
-  .sidebar.hidden {
-    transform: translateX(200px); 
-  }
   .sidebar{
     right: 20px;
     top: 80px;
+    transform: translateX(200px); 
   }
 }
