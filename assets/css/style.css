@@ -118,7 +118,7 @@ body {
   position: absolute;
   width: 2px;
   height: 122%;
-  background: linear-gradient(to top, #210033, #1e40af);
+  background: linear-gradient(to top, #09000f, #051444);
   left: -40px;
   top: 10px;
 }
@@ -129,13 +129,26 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: linear-gradient(to top, #adb5bd, #1e40af);
+  background: linear-gradient(to top, #09000f, #051444);;
   left: -46px;
   top: 5px;
 }
 .line h2{
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.line:hover::after {
+  background: #0ea5e9;
+}
+.line:hover .date {
+  color: #0ea5e9;
+}
+
+.line:hover .study, 
+.line:hover .work {
+  border-color: #0ea5e9;
+  color: #0ea5e9;
 }
 
 .div-skill {
