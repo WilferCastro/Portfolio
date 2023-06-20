@@ -1,6 +1,7 @@
 body{
-  background: rgb(11,17,32);
-  background: linear-gradient(28deg, rgba(11,17,32,1) 20%, rgba(33,0,51,1) 28%, rgba(12,19,38,1) 51%, rgba(33,0,51,1) 74%, rgba(11,17,32,1) 81%);
+  background: rgb(6,9,17);
+  background: radial-gradient(circle, rgba(6,9,17,1) 20%, rgba(9,0,15,1) 28%, rgba(6,9,17,1) 51%, rgba(9,0,15,1) 74%, rgba(6,9,17,1) 81%);
+  font-family: 'Inter', sans-serif;
 }
 /* *{
   border: 2px solid red;
@@ -65,7 +66,9 @@ body{
 }
 
 .color-primary{
-color: #0ea5e9;
+  background: linear-gradient(to right, #0ea5e9,#5b21b6);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .h2-2{
@@ -82,12 +85,12 @@ color: #0ea5e9;
     color: #fff;
     font-weight: 400;
     margin-bottom: 33px;
+    text-transform: capitalize;
 }
 
 .column2{
-  max-width: 100% !important;
-  /* padding-right: 130px !important; */
-  /* padding-left: 3rem !important; */
+  padding-right: 140px !important;
+  padding-left: 3rem !important;
 }
 
 .line{
@@ -129,83 +132,50 @@ position: relative;
   border-color: #0ea5e9;
 }
 
-.badge-red{
+.badge{
   padding: 0px 10px 0px 10px;
   text-align: center;
-  border:1px solid #ef4444;
   color: #fff;
   border-radius: 15px;
+}
+
+.badge-red{
+  border:1px solid #ef4444;
 }
 
 .badge-red-2{
-  padding: 0px 10px 0px 10px;
-  text-align: center;
   border:1px solid #db2777;
-  color: #fff;
-  border-radius: 15px;
 }
 
 .badge-blue{
-  padding: 0px 10px 0px 10px;
-  text-align: center;
   border:1px solid #0891b2;
-  color: #fff;
-  border-radius: 15px;
 }
 
 .badge-blue-2{
-  padding: 0px 10px 0px 10px;
-  text-align: center;
   border:1px solid #617cbe;
-  color: #fff;
-  border-radius: 15px;
 }
 .badge-orange{
-  padding: 0px 10px 0px 10px;
-  text-align: center;
   border:1px solid #f97316;
-  color: #fff;
-  border-radius: 15px;
 }
 
 .badge-orange-2{
-  padding: 0px 10px 0px 10px;
-  text-align: center;
   border:1px solid #d88d28;
-  color: #fff;
-  border-radius: 15px;
 }
 
 .badge-yellow{
-  padding: 0px 10px 0px 10px;
-  text-align: center;
   border:1px solid #eab308;
-  color: #fff;
-  border-radius: 15px;
 }
 
 .badge-yellow-2{
-  padding: 0px 10px 0px 10px;
-  text-align: center;
   border:1px solid #ffde25;
-  color: #fff;
-  border-radius: 15px;
 }
 
 .badge-green{
-  padding: 0px 10px 0px 10px;
-  text-align: center;
   border:1px solid #002a19;
-  color: #fff;
-  border-radius: 15px;
 }
 
 .badge-green-2{
-  padding: 0px 10px 0px 10px;
-  text-align: center;
   border:1px solid #77bc1f;
-  color: #fff;
-  border-radius: 15px;
 }
 
 .mb-6{
@@ -244,6 +214,64 @@ position: relative;
   border-color: #0ea5e9;
 }
 
+.portfolio-item-inner {
+  height: 370px;
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.portfolio-item-inner .portfolio-categories {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  bottom: 20px;
+  left: 20px;
+}
+
+.portfolio-item-inner .portfolio-categories li a {
+  display: block;
+  font-size: 14px;
+  background: #fff;
+  color: #000;
+  padding: 7px 20px;
+  border-radius: 19px;
+  transition: .3s;
+}
+
+.portfolio-items h4 a {
+  color: #fff;
+}
+
+.portfolio-item-inner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portfolio-item:hover .portfolio-item-inner li a {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.portfolio-item:hover h4 a {
+  text-decoration: underline;
+  border-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 787px) {
   .text-intro{
     font-size: 58px;
@@ -251,9 +279,9 @@ position: relative;
   }
 }
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
   .column2{
-    padding-right: 25px !important;
+    padding-right: 15px !important;
     padding-left: 15px !important;
   }
-} */
+}
