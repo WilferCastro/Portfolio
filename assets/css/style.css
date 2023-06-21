@@ -423,8 +423,11 @@ textarea {
 
 @media (max-width: 787px) {
   .text-intro {
-    font-size: 58px;
+    font-size: 50px;
     line-height: 1.3;
+  }
+  .subtitle {
+    font-size: 38px;
   }
   .btn2 {
     width: 100%;
