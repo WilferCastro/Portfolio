@@ -503,26 +503,27 @@
                     <form name="contact" method="post" data-netlify="true">
                         <div class="row">
                             <div class="col-md-6 mb-5 scroll-animation">
+                                <input type="hidden" name="" id="" >
                                 <div class="group-input">
-                                    <input type="text" id="id-name" placeholder="." required>
+                                    <input type="text" name="full-name" id="id-name" placeholder="." required>
                                     <label for="id-name">Nombre <sup>*</sup></label>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-5 scroll-animation">
                                 <div class="group-input">
-                                    <input type="email" id="id-phone" placeholder="." required>
+                                    <input type="email" name="form-email" id="id-email" placeholder="." required>
                                     <label for="id-email">Email <sup>*</sup></label>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-5 scroll-animation" data-animation="fade_from_top">
                                 <div class="group-input">
-                                    <input type="number" id="id-email" placeholder=".">
+                                    <input type="text" name="form-phone" id="id-phone" placeholder=".">
                                     <label for="id-phone">Teléfono</label>
                                 </div>
                             </div>
                             <div class="col-md-12 mb-5 scroll-animation">
                                 <div class="group-input">
-                                    <textarea name="" id="id-message" cols="30" rows="8"
+                                    <textarea name="form-message" id="id-message" cols="30" rows="8"
                                         placeholder="Mensaje"></textarea>
                                 </div>
                             </div>
